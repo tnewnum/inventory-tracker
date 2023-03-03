@@ -1,4 +1,4 @@
-require('dotenv').config();WSDB_URL
+require('dotenv').config();
 
 const Sequelize = require('sequelize');
 
