@@ -15,10 +15,20 @@ router.get('/', async (req, res) => {
   }
 });
 
-// router.get('/:id', (req, res) => {
-//   // find a single tag by its `id`
-//   // be sure to include its associated Product data
-// });
+// find a single tag by its `id`
+router.get('/:id', async (req, res) => {    
+    try{
+        const productData = await Tag.findByPk(req.params.id, {
+         include: Product
+        })
+        res.status(200).json(productData)
+    }
+
+    catch (err) {
+        res.status(500).json
+    }
+    
+});
 
 // router.post('/', (req, res) => {
 //   // create a new tag
