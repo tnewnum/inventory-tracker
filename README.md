@@ -20,6 +20,10 @@ You must install all dependecies to run the application. The required dependenci
 
 In order to launch the program, you must npm i first. From there you can login to msql with "mysql -u root -p" and SOURCE the schema file. Once that is complete, quit mysql, and run "node seeds/index" to seed the project. After that you can run "npm run start" to launch the app, and then get into insomina to test the routes. 
 
+For a short usage video check out: 
+
+
+
 ## 🔒 License
 
 This project is covered under : No License at this time!
